@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+body {
+    background-color: #F1F6FC31;
+}
+
+section,
+footer {
+    padding: 54px 0;
+
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: #ffa500;
+}
+
+.btn.animete-btn {
+    animation: animete-outline 1s ease-out infinite;
+}
+
+@keyframes animete-outline {
+    from {
+        outline: 0px solid #ffa500;
+    }
+
+    to {
+        outline: 15px solid #f1551c2d;
+    }
+
+}
+
+.heade {
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn)::after {
+    content: " ";
+    background-color: blue;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+.Tenha-o-semaforo-com-você .container {
+    display: flex;
+    align-items: center;
+}
+
+.Tenha-o-semaforo-com-você .Trabalhe-com-o-semaforo-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.Tenha-o-semaforo-com-você .Trabalhe-com-o-semaforo-text h3 {
+    font-size: 56px;
+
+}
+
+.Tenha-o-semaforo-com-você .Trabalhe-com-o-semaforo-text p {
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+}
+
+.Tenha-o-semaforo-com-você .trabalhe-com-o-semaforo-img {
+    width: 60%;
+}
+
+.Tenha-o-semaforo-com-você .trabalhe-com-o-semaforo-img img {
+    width: 100%;
+}
+
+
+/* pag sobre*/
+.sobre .container {
+    display: flex;
+    align-items: center;
+}
+
+.sobre .sobre-text {
+    width: 90vw;
+    padding: 0 40px;
+}
+
+.sobre .sobre-text h4 {
+    font-size: 56px;
+}
+
+.sobre .sobre-text p {
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+}
+
+.sobre-img {
+    width: 100%;
+    padding: 0 140px;
+
+}
+
+.sobre-img img {
+    width: 100%;
+
+}
+
+/*will*/
+.will .container {
+    display: flex;
+    align-items: center;
+}
+
+.will .will-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.will .will-text h5 {
+    font-size: 50px;
+}
+
+.will .will-text p {
+    margin: 5px 0 10px 0;
+    font-size: 22px;
+}
+
+.will .will-img {
+    width: 60%;
+    object-fit: cover;
+}
+
+.will .will-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* end will*/
+
+/* WEDUARDA*/
+.weduarda .container {
+    display: flex;
+    align-items: center;
+}
+
+.weduarda .weduarda-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.weduarda .weduarda-text h6 {
+    font-size: 50px;
+}
+
+.weduarda .weduarda-text p {
+    margin: 5px 0 10px 0;
+    font-size: 22px;
+}
+
+.weduarda .weduarda-img {
+    width: 50%;
+
+}
+
+.weduarda .weduarda-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* end weduarda*/
+
+/* karolis*/
+.karolis .container {
+    display: flex;
+    align-items: center;
+}
+
+.karolis .karolis-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.karolis .karolis-text h7 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.karolis .karolis-text p {
+    margin: 5px 0 10px 0;
+    font-size: 22px;
+}
+
+.karolis .karolis-img {
+    width: 50%;
+
+}
+
+.karolis .karolis-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* end karolis*/
+
+/* Arthur*/
+.turb .container {
+    display: flex;
+    align-items: center;
+}
+
+.turb .turb-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.turb .turb-text h8 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.turb .turb-text p {
+    margin: 5px 0 10px 0;
+    font-size: 22px;
+}
+
+.turb .turb-img {
+    width: 50%;
+
+}
+
+.turb .turb-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* end arthur*/
+
+/* Maria laura*/
+.mah .container {
+    display: flex;
+    align-items: center;
+}
+
+.mah .mah-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.mah .mah-text h9 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.mah .mah-text p {
+    margin: 5px 0 10px 0;
+    font-size: 22px;
+}
+
+.mah .mah-img {
+    width: 50%;
+
+}
+
+.mah .mah-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* end maria l*/
+
+/* Igor Eduardo*/
+
+.igor .container {
+    display: flex;
+    align-items: right;
+}
+
+.igor .igor-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.igor .igor-text h6 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.igor .igor-text p {
+    margin: 5px 0 10px 0;
+    font-size: 22px;
+}
+
+.igor .igor-img {
+    width: -50;
+    align-items: right;
+
+}
+
+.igor .igor-img img {
+    width: 70%;
+    object-fit: cover;
+   
+}
+
+/* end Igor Eduardo*/
+
+/* end pag sobre*/
+
+/*serviços*/
+
+/*serviços*/
+/*pag de contacto*/
+.contacto-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contacto-info .left-side {
+    width: 100%;
+    padding: 30px;
+    background-color: #ff4500;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+
+}
+
+.contacto-info .left-side div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacto-info .left-side div i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contacto-info .left-side div p {
+    font-size: 17px;
+    color: white;
+}
+
+.contacto-info .right-side {
+    width: 100%;
+}
+
+
+
+
+.contacto-info .right-side input:focus,
+.contacto-info .right-side textarea:focus {
+    border-color: #0DF205;
+}
+
+.contacto-info .right-side textarea {
+    border: 1px solid orangered;
+    color: orangered;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 60%;
+}
+
+/*footer*/
+.footer {
+    background-color: orangered;
+    text-align: center;
+}
+
+.footer i {
+    color: #ff4500;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+
+}
+
+.footer .p {
+    margin-top: 10px;
+    color: white;
+}
+
+/*footer*/
+
+@media(max-width: 780px) {
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: orange;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+
+    .ul .open {
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .close-icon {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+
+}
+
+/* slide */
+
+
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    width: 90%;
+    height: 90%;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#prev-button,
+#next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+/*  
+.slider .container{
+    display: flex;
+    justify-content: center;
+}
+.slider .slider.text{
+    display: flex;
+    align-items: center;
+}
+.slider .slider-text{
+    width: 100%;
+    padding: 0 40px;
+}
+
+.slider .slider-text h3{
+    font-size: 56px;
+    color: orangered;
+    
+}*/
+
+/* mdia query*/
+
+@media screen and (max-width: 780px) {
+    .heade {
+        display: block;
+        background-image: none;
+        width: 50vw;
+    }
+
+    /* teste*/
+    .Tenha-o-semaforo-com-você .container {
+        display: flex;
+
+    }
+
+    .Tenha-o-semaforo-com-você .Trabalhe-com-o-semaforo-text {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .Tenha-o-semaforo-com-você .Trabalhe-com-o-semaforo-text h3 {
+        font-size: 20px;
+
+    }
+
+    .Tenha-o-semaforo-com-você .Trabalhe-com-o-semaforo-text p {
+        margin: 2px 0 5px 0;
+        font-size: 15px;
+    }
+
+    .Tenha-o-semaforo-com-você .trabalhe-com-o-semaforo-img {
+        width: 50vw;
+    }
+
+    .Tenha-o-semaforo-com-você .trabalhe-com-o-semaforo-img img {
+        width: 100%;
+    }
+
+    /* sobre MQ*/
+
+    .sobre .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .sobre .sobre-text {
+        width: 90vw;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .sobre .sobre-text h4 {
+        font-size: 28px;
+        color: orangered;
+    }
+
+    .sobre .sobre-text p {
+        color: black;
+        margin: 2px 0;
+        font-size: 18px;
+    }
+
+    .sobre-img {
+        width: 100%;
+        padding: 0 50px;
+    
+    }
+    
+    .sobre-img img {
+        width: 100%;
+    
+    }
+
+    /*will*/
+    .will .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .will .will-text {
+        width: 80vw;
+        padding: 0 5px;
+    }
+
+    .will .will-text h5 {
+        font-size: 20px;
+    }
+
+    .will .will-text p {
+        margin: 4px 0 5px 0;
+        font-size: 15px;
+    }
+
+    .will .will-img {
+        width: 0;
+        object-fit: cover;
+    }
+
+    .will .will-img img {
+        width: 0%;
+        object-fit: cover;
+    }
+
+    /* end will*/
+
+    /* WEDUARDA*/
+    .weduarda .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .weduarda .weduarda-text {
+        width: 80vw;
+        padding: 0 5px;
+    }
+
+    .weduarda .weduarda-text h6 {
+        font-size: 20px;
+    }
+
+    .weduarda .weduarda-text p {
+        margin: 4px 0 5px 0;
+        font-size: 15px;
+    }
+
+    .weduarda .weduarda-img {
+        width: 0;
+
+    }
+
+    .weduarda .weduarda-img img {
+        width: 0;
+        object-fit: cover;
+    }
+
+    /* end weduarda*/
+
+    /* karolis*/
+    .karolis .container {
+        display: flex;
+        align-items: right;
+    }
+
+    .karolis .karolis-text {
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .karolis .karolis-text h7 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .karolis .karolis-text p {
+        margin: 4px 2px 5px 2px;
+        font-size: 15px;
+    }
+
+    .karolis .karolis-img {
+        width: 0vw;
+    }
+
+    .karolis .karolis-img img {
+        width: 0vw;
+        object-fit: cover;
+    }
+
+    /* end karolis*/
+
+    /* Arthur*/
+    .turb .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .turb .turb-text {
+        width: 80vw;
+        padding: 0 5px;
+    }
+
+    .turb .turb-text h8 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .turb .turb-text p {
+        margin: 4px 0 5px 0;
+        font-size: 15px;
+    }
+
+    .turb .turb-img {
+        width: 0%;
+
+    }
+
+    .turb .turb-img img {
+        width: 0%;
+        object-fit: cover;
+    }
+
+    /* end arthur*/
+
+    /* Maria laura*/
+    .mah .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .mah .mah-text {
+        width: 80vw;
+        padding: 0 5px;
+    }
+
+    .mah .mah-text h9 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .mah .mah-text p {
+        margin: 4px 0 5px 0;
+        font-size: 15px;
+    }
+
+    .mah .mah-img {
+        width: 0%;
+
+    }
+
+    .mah .mah-img img {
+        width: 0%;
+        object-fit: cover;
+    }
+
+    /* end maria l*/
+
+    /* Igor Eduardo*/
+
+    .igor .container {
+        display: flex;
+        align-items: right;
+    }
+
+    .igor .igor-text {
+        width: 90vw;
+        padding: 0 20px;
+    }
+
+    .igor .igor-text h6 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .igor .igor-text p {
+        margin: 4px 0 5px 0;
+        font-size: 15px;
+    }
+
+    .igor .igor-img {
+        width: 0vw;
+    }
+
+    .igor .igor-img img {
+        width: 0vw;
+        object-fit: cover;
+    }
+
+    /* serviço*/
+    .serviço-Tenha-o-semaforo-com-você .container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .serviço-Tenha-o-semaforo-com-você .serviço-text {
+        width: 50vw;
+        padding: 0 20px;
+    }
+    
+    .serviço-Tenha-o-semaforo-com-você .serviço-text  {
+        font-size: 20px;
+    
+    }
+    
+    .serviço-Tenha-o-semaforo-com-você .serviço-text p {
+        margin: 2px 0 5px 0;
+        font-size: 5px;
+    }
+    
+    .serviço-Tenha-o-semaforo-com-você .serviço-img {
+        width: 20%;
+    }
+    
+    .serviço-Tenha-o-semaforo-com-você .serviço-img img {
+        width: 30%;
+    }
+    /*serviço end*/
+
+    /* sobre end MQ*/
+
+}
+
+
+/* serviço*/
+.serviço-Tenha-o-semaforo-com-você .container {
+    display: flex;
+    align-items: center;
+}
+
+.serviço-Tenha-o-semaforo-com-você .serviço-text {
+    width: 50vw;
+    padding: 0 40px;
+}
+
+.serviço-Tenha-o-semaforo-com-você .serviço-text h3 {
+    font-size: 50px;
+
+}
+
+.serviço-Tenha-o-semaforo-com-você .serviço-text p {
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+}
+
+.serviço-Tenha-o-semaforo-com-você .serviço-img {
+    width: 60%;
+}
+
+.serviço-Tenha-o-semaforo-com-você .serviço-img img {
+    width: 100%;
+}
