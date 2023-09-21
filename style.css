@@ -946,9 +946,9 @@ nav ul a:hover::after {
     padding: 0 40px;
 }
 
-.serviço-Tenha-o-semaforo-com-você .serviço-text h4 {
+.serviço-Tenha-o-semaforo-com-você .serviço-text h17 {
     font-size: 50px;
-
+    font-weight: bold;
 }
 
 .serviço-Tenha-o-semaforo-com-você .serviço-text p {
